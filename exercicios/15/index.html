@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    
+    <h3>Registo de Casas</h3>
+    <form>        
+        <p>
+            <label>N°: </label>
+            <input type="text" name="number">
+        </p>
+        <p>
+            <label>Bairro: </label>
+            <input type="text" name="district">
+        </p>
+        <p>
+            <label>Cidade: </label>
+            <input type="text" name="city">
+        </p>
+        <p>
+            <label>Área: </label>
+            <input type="text" name="area">
+        </p>
+
+        <button onclick="addHouse()" type="button">Adicionar</button>
+    </form>
+
+    <ul id="house-list">
+
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

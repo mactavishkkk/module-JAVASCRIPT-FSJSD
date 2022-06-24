@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label>Nome: </label>
+            <input type="text" name="first-name" id="first-name" onchange="sayMyFirstName(this)">
+            <!-- Aqui estamos passando a função com um parâmetro que retorna o prórpio elemento, que é o input -->
+        </p>
+        <p>
+            <label>Sobrenome: </label>
+            <input type="text" name="last-name" id="last-name" onchange="sayMyLastName()">
+        </p>
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

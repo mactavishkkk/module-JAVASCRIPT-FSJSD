@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <h2>Register your immobile</h2>
+    <form onsubmit="app.addImmobile()">
+        <p>
+            <label>Type: </label>
+            <select name="select-type">
+                <option value="">Select:</option>
+                <option value="house">House</option>
+                <option value="apartament">Apartament</option>
+            </select>
+        </p>
+        <p>
+            <label>Area :</label>
+            <input type="text" name="area" placeholder=" (m²)" maxlength="4" size="4">
+        </p>
+        <p>
+            <label>Status: </label>
+            <select name="select-status">
+                <option value="">Select:</option>
+                <option value="rented">Rented</option>
+                <option value="available">Available</option>
+            </select>
+        </p>
+
+        <button type="submit">Save</button>
+        <button onclick="app.cleanForm()" type="button">Clean</button>
+    </form>
+
+    <h2>Immobiles Registreds</h2>
+
+    <ol id="listImmobile">
+
+    </ol>
+
+    <script src="js/app.js"></script>
+    <script src="js/immobile.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
